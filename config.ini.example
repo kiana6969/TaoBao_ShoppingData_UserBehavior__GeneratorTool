@@ -1,0 +1,21 @@
+#"""
+将下面的数据改成你自己的，如果没有要改的，就把我的默认值填进去
+需注意：查询程序里的数据库名称为taobaouserbehavior_database    （<-中间是下划线，记事本显示不出来而已）
+                               数据表名称为userbehavior
+不在mysql里重命名就无法使用
+#"""
+[mysql]
+host =  #你的MySQL的host，默认是localhost
+port =  #你的MySQL数据库的端口，默认是3306
+user =  #你的MySQL用户名，管理员用户是root
+password = #你的MySQL密码
+db_name = taobaouserbehavior_database  #不建议改，要改的话源码也要改
+
+[params]
+init_id =  #起始行，默认为1，不建议改
+step =  #步长，默认为100000，根据电脑内存大小酌情处理
+total_rows = #总行数，需要去MySQL里手动查询，未来会内置在工具内部
+ts_min = #原数据中ts列的最小值需要去MySQL里手动查询，未来会内置在工具内部
+ts_max =  #原数据中ts列的最大值，需要去MySQL里手动查询，未来会内置在工具内部
+valid_behavior =  #用户行为，电商默认行为为pv,cart,fav,buy   （注意标点符号）
+
